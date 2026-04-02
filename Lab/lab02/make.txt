@@ -1,7 +1,9 @@
-1.
-2.
-3.
-4.
-5.
-6.
-7.
+1. Target clean is part of a rule that deletes all the compiled programs.
+2. Target all is part of a rule that makes all the compiled programs. Basically this target is
+to list all the programs you need to make.
+3. GCC is currently being used.
+4. We currently using the C99 standard.
+5. We can reference a variable "FOO" by use this format: $(FOO).
+6. "Darwin" represents the open-source, Unix-like core operating system underpinning Apple's
+modern platforms, like macOS, iOS, iPadOS, watchOS...
+7.  Maybe its line 31. 
