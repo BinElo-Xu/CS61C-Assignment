@@ -30,6 +30,7 @@
  * struct vector is because all struct pointers have the same representation in memory.
  */
 
+#include <stdlib.h>
 #include <sys/types.h>
 
 typedef struct vector_t vector_t;
@@ -51,5 +52,6 @@ int vector_get(vector_t *v, size_t loc);
 
 /* Set a value in the vector */
 /* YOUR CODE HERE */
-
+void vector_delete(vector_t *v);
+void vector_set(vector_t *v, size_t loc, int value);
 #endif
