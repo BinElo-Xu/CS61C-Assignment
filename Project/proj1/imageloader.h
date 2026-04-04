@@ -23,3 +23,6 @@ extern void writeData(Image *image);
 
 //Frees an image and all its associated data
 extern void freeImage(Image *image);
+
+// initialize the image.
+void setup_image(Image *image);
