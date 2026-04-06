@@ -14,7 +14,6 @@
 **************************************************************************/
 
 #include <alloca.h>
-#include <math.h>
 #include <stddef.h>
 #include <stddef.h>
 #include <stdint.h>
@@ -44,15 +43,6 @@ void set_color(Color **color, uint8_t n) {
 Color *evaluateOnePixel(Image *image, int row, int col)
 {
 	//YOUR CODE HERE
-    if (image == NULL) {
-	printf("image is NULL\n");
-	exit(0);
-    }
-
-    if (image->image == NULL) {
-	printf("image contains no image!\n");
-	exit(0);
-    }
     Color *ans = malloc(sizeof(Color));
     if (ans == NULL) {
 	allocation_failed();
