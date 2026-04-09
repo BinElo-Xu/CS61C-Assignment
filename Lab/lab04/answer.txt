@@ -1,0 +1,8 @@
+1. Why do we need to save stuff on the stack before we call jal?
+These stuff may be used after the function call, and we are assume these stuff will not change
+their value.
+
+2. What’s the difference between add t0, s0, x0 and lw t0, 0(s0)?
+"add t0, s0, x0" treat s0 as a number, and t0=s0+x0. "lw t0, 0(s0)" treat s0 as a pointer, it
+will find the address of what s0 point to, and then load the value of that address + x0 to to.
+

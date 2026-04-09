@@ -6,8 +6,9 @@ int fun(int x) {
 }
 
 int main() {
-    int k;
-    int sum = 0;
+    int k; // t0
+    int sum = 0; // s0
+    // t2->source, t3->dest
     for (k = 0; source[k] != 0; k++) {
         dest[k] = fun(source[k]);
         sum += dest[k];
